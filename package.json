@@ -7,6 +7,10 @@
     "mongodb": "^5.1.0",
     "nodemon": "^2.0.20"
   },
+  "engines": {
+    "node": ">18",
+    "npm": ">8"
+  },
   "name": "potential-parakeet",
   "description": "CIS 486 Mike Lab",
   "version": "1.0.0",
