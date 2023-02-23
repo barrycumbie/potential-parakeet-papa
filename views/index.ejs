@@ -1,0 +1,18 @@
+<!-- change stuff -->
+  
+<h3>People on board: </h3> 
+<% for (var i=0; i< peopleData.length; i++ ) { %>
+ <form method="POST" action="/deletePerson/<%= peopleData[i]._id %>" style="display: inline-block">  
+   <%= peopleData[i].name %> (<%= peopleData[i].size %>) 
+   <input type="submit" value="delete"> 
+ </form>
+ <br/>
+ <% } %> 
+
+ <h3> add a new drink </h3>
+<form method="get" action="/update">
+    <p>Type anything?</p>
+    <input type="text" name="ejsFormName" value="something"> 
+    <input type="submit">
+  </form>
+  
