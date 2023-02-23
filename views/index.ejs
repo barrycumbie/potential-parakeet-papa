@@ -9,7 +9,17 @@
  <br/>
  <% } %> 
 
- <h3> add a new drink </h3>
+ <h3>People on board: </h3> 
+ <% for (var i=0; i< peopleData.length; i++ ) { %>
+    <form method="POST" action="/updatePerson/<%= peopleData[i]._id %>" style="display: inline-block">  
+      <%= peopleData[i].name %> (<%= peopleData[i].size %>) 
+      <input type="submit" value="update"> 
+    </form>
+<br/>
+<% } %> 
+
+
+ <h3> add a new dude </h3>
 <form method="get" action="/update">
     <p>Type anything?</p>
     <input type="text" name="ejsFormName" value="something"> 
