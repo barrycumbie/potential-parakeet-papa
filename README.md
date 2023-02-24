@@ -1,2 +1,2 @@
 # potential-parakeet
-CIS 486 Mike Lab
+CIS 486 Papa Lab
